@@ -3,6 +3,7 @@ import { useState } from "react"
 import { Carousel, Button, Container } from "react-bootstrap"
 import { Link } from "react-router-dom";
 import Khmer from  "../../assets/img/khmer.png";
+import Btb from  "../../assets/img/btb.jpg";
 const Slider = () => {
     const [index, setIndex] = useState(0)
 
@@ -21,7 +22,7 @@ const Slider = () => {
             align: "left",
         },
         {
-            image: Khmer,
+            image: Btb,
             title: "Special Discount",
             subtitle: "Limited Time Offer",
             description: "Get up to 50% off on selected items. Don't miss out on these amazing deals!",
@@ -44,12 +45,11 @@ const Slider = () => {
         <Carousel activeIndex={index} onSelect={handleSelect} className="hero-slider" fade>
             {slides.map((slide, idx) => (
                 <Carousel.Item key={idx} className="hero-section" style={{ backgroundImage: `url(${slide.image})` }}>
-                    <Container className={`d-flex justify-content-${slide.align} align-items-center h-100`}>
-                        <div className="hero-content" style={{ maxWidth: "500px" }}>
+                    <Container className={`d-flex justify-content-${slide.align === 'left' ? 'start' : slide.align === 'right' ? 'end' : 'center'} align-items-center h-100`}>
+                    <div className="hero-content" style={{ maxWidth: "500px" }}>
                             <p className="text-uppercase mb-2">{slide.subtitle}</p>
                             <h1 className="hero-title">{slide.title}</h1>
                             <p className="mb-4">{slide.description}</p>
-                            <h1s className="Test_text">Hello kon kon kon  drtyuiojhgffgyuikl</h1s>
                             <Link to={slide.buttonLink}>
                                 <Button variant="primary" size="lg">
                                     {slide.buttonText}

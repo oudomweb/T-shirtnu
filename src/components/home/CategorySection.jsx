@@ -1,30 +1,33 @@
 import { Container, Row, Col } from "react-bootstrap"
 import { Link } from "react-router-dom"
-
+import Khmer from "../../assets/img/khmer.png";
+import Nang from  "../../assets/img/nang1.jpg";
+import FontN from  "../../assets/img/frontt.png";
+import Btb from  "../../assets/img/btb.jpg";
 const CategorySection = () => {
     const categories = [
         {
             id: 1,
             name: "Men",
-            image: "/images/category-men.jpg",
+            image: Khmer,
             link: "/men",
         },
         {
             id: 2,
             name: "Women",
-            image: "/images/category-women.jpg",
+            image: Nang,
             link: "/women",
         },
         {
             id: 3,
             name: "Boys",
-            image: "/images/category-boys.jpg",
+            image: FontN,
             link: "/boys",
         },
         {
             id: 4,
             name: "Girls",
-            image: "/images/category-girls.jpg",
+            image: Btb,
             link: "/girls",
         },
     ]
@@ -53,4 +56,4 @@ const CategorySection = () => {
     )
 }
 
-export default CategorySection
+export default CategorySection;

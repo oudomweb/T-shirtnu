@@ -3,7 +3,7 @@ import {DataProducts} from "../../data/Data.jsx";
 import ProductCard from "../products/ProductCard.jsx";
 
 const FeaturedProducts = () => {
-    // Filter products by category
+    // console.log(DataProducts.image);
     const newArrivals = DataProducts.filter((product) => product.isNew)
     const bestSellers = DataProducts.filter((product) => product.isBestSeller)
     const featured = DataProducts.filter((product) => product.isFeatured)
@@ -34,6 +34,7 @@ const FeaturedProducts = () => {
 
                     <Tab.Content>
                         <Tab.Pane eventKey="new-arrivals">
+                            {/*className="g-4 border border-danger"*/}
                             <Row>
                                 {newArrivals.slice(0, 8).map((product) => (
                                     <Col sm={6} md={4} lg={3} key={product.id}>
