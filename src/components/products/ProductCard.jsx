@@ -1,6 +1,7 @@
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FaHeart, FaShoppingCart, FaEye } from "react-icons/fa";
+import Svg from  "../../assets/img/khmer.png";
 
 const ProductCard = ({ product }) => {
     const { id, name, price, originalPrice, images, isNew, isSale, discount } = product
@@ -13,7 +14,8 @@ const ProductCard = ({ product }) => {
                     {images.length > 1 && (
                         <div className="hover-image position-absolute top-0 start-0 w-100 h-100 opacity-0">
                             <img
-                                src={images[1] || "/placeholder.svg"}
+                                // src={images[1] || "/placeholder.svg"}
+                                src={Svg || "/placeholder.svg"}
                                 alt={`${name} - alternate view`}
                                 className="w-100 h-100 object-fit-cover"
                                 style={{ opacity: 0, position: "absolute", top: 0, left: 0, objectFit: "cover" }}

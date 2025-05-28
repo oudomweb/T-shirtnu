@@ -4,14 +4,11 @@ import {DataProducts} from "../../data/Data.jsx";
 import ProductCard from "../../components/products/ProductCard.jsx";
 
 const MenProducts = () => {
-    // In a real app, you would filter products by gender/category
-    // For this demo, we'll just use a subset of the mock products
     const menProducts = DataProducts.slice(0, 8)
 
     return (
         <div className="py-5">
             <Container>
-                {/* Breadcrumb */}
                 <Breadcrumb className="mb-4">
                     <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }}>
                         Home

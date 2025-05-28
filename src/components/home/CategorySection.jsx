@@ -38,7 +38,7 @@ const CategorySection = () => {
                 <h2 className="text-center mb-5">Shop By Category</h2>
                 <Row>
                     {categories.map((category) => (
-                        <Col md={6} lg={3} key={category.id} className="mb-4">
+                            <Col md={6} lg={3} key={category.id} className="mb-4">
                             <Link to={category.link}>
                                 <div className="category-card">
                                     <img src={category.image || "/placeholder.svg"} alt={category.name} className="img-fluid" />

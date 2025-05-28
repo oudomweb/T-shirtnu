@@ -4,13 +4,11 @@ import {DataProducts} from "../../data/Data.jsx";
 import ProductCard from "../../components/products/ProductCard.jsx";
 
 const BestSellers = () => {
-    // Filter for best selling products
     const bestSellerProducts = DataProducts.filter((product) => product.isBestSeller)
 
     return (
         <div className="py-5">
             <Container>
-                {/* Breadcrumb */}
                 <Breadcrumb className="mb-4">
                     <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }}>
                         Home

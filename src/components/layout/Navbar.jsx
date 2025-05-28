@@ -30,7 +30,6 @@ const NavbarTop = () => {
 
     return (
         <header>
-            {/* Top Bar */}
             <div className="bg-dark text-white py-2">
                 <Container>
                     <div className="d-flex justify-content-between align-items-center">
@@ -80,15 +79,14 @@ const NavbarTop = () => {
                                     Girls
                                 </NavDropdown.Item>
                             </NavDropdown>
-
                             <NavDropdown title="Collections" id="collections-dropdown">
-                                <NavDropdown.Item as={Link} to="/popular-products">
+                                <NavDropdown.Item as={Link} to="/popular">
                                     Popular Products
                                 </NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/special-products">
+                                <NavDropdown.Item as={Link} to="/special">
                                     Special Products
                                 </NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/best-sellers">
+                                <NavDropdown.Item as={Link} to="/best">
                                     Best Sellers
                                 </NavDropdown.Item>
                             </NavDropdown>
@@ -101,7 +99,7 @@ const NavbarTop = () => {
                                 About Us
                             </Nav.Link>
 
-                            <Nav.Link as={Link} to="/contact-us" className={location.pathname === "/contact-us" ? "fw-bold" : ""}>
+                            <Nav.Link as={Link} to="/contact" className={location.pathname === "/contact-us" ? "fw-bold" : ""}>
                                 Contact
                             </Nav.Link>
                         </Nav>
