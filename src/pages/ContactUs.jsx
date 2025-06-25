@@ -170,7 +170,7 @@ const ContactUs = () => {
                                                 <Form.Group controlId="Phone">
                                                     <Form.Label>Phone Number : </Form.Label>
                                                     <Form.Control
-                                                        type="number"
+                                                        type="text"
                                                         name="phone"
                                                         value={formData.phone}
                                                         onChange={handleChange}
