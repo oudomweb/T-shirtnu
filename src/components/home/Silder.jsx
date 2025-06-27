@@ -2,8 +2,8 @@
 import {useState} from "react";
 import {Carousel, Button, Container} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import Khmer from "../../assets/img/khmer.png";
-import Btb from "../../assets/img/btb.jpg";
+import Khmer from "../../assets/img/Cover_photo2.png";
+import Cover from "../../assets/img/Cover_photo1.png";
 const Slider = () => {
   const [index, setIndex] = useState(0);
 
@@ -23,7 +23,7 @@ const Slider = () => {
       align: "left",
     },
     {
-      image: Btb,
+      image: Cover,
       title: "Special Discount",
       subtitle: "Limited Time Offer",
       description:

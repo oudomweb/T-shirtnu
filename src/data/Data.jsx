@@ -2,17 +2,18 @@ import Btb from "../assets/img/btb.jpg";
 import Khmer from "../assets/img/khmer.png";
 import Nang from "../assets/img/img.png";
 import Long from "../assets/img/long1.jpg";
+import green from "../assets/img/frontt.png";
 export const DataProducts = [
   {
     id: 1,
     name: "Classic Cotton T-Shirt",
-    price: 14.99,
-    originalPrice: null,
+    price: 12,
+    originalPrice: 13.99,
     description:
       "A comfortable classic cotton t-shirt perfect for everyday wear.",
     fullDescription:
       "Our Classic Cotton T-Shirt is made from 100% premium cotton for ultimate comfort and durability. This versatile piece features a regular fit, crew neck, and short sleeves, making it perfect for everyday wear. Available in multiple colors, it's a wardrobe essential that can be dressed up or down for any occasion.",
-    images: [Khmer, Btb],
+    images: [green, Btb],
     colors: ["Black", "White", "Gray", "blue"],
     sizes: ["S", "M", "L", "XL", "XXL"],
     category: "T-Shirts",
@@ -28,8 +29,8 @@ export const DataProducts = [
   {
     id: 2,
     name: "Graphic Print T-Shirt",
-    price: 34.99,
-    originalPrice: 44.99,
+    price: 12,
+    originalPrice: 13.99,
     description: "Express your style with our unique graphic print t-shirt.",
     images: [Btb, Khmer],
     colors: ["Black", "White", "Red"],
@@ -47,8 +48,8 @@ export const DataProducts = [
   {
     id: 3,
     name: "Premium Polo Shirt",
-    price: 49.99,
-    originalPrice: null,
+    price: 11,
+    originalPrice: 13.99,
     description: "Elevate your casual look with our premium polo shirt.",
     images: [Nang, Long, Btb],
     colors: ["Navy", "White", "Light Blue", "Black"],
@@ -66,10 +67,10 @@ export const DataProducts = [
   {
     id: 4,
     name: "Vintage Washed T-Shirt",
-    price: 39.99,
-    originalPrice: null,
+    price: 12,
+    originalPrice: 13.99,
     description: "A soft, vintage-washed t-shirt for that lived-in comfort.",
-    images: [Khmer, Long, Btb],
+    images: [Btb, Khmer, Long],
     colors: ["Black", "Blue", " Green", "White"],
     sizes: ["S", "M", "L", "XL"],
     category: "T-Shirts",
@@ -85,8 +86,8 @@ export const DataProducts = [
   {
     id: 5,
     name: "Long Sleeve Henley",
-    price: 44.99,
-    originalPrice: 54.99,
+    price: 12,
+    originalPrice: 13.99,
     description: "A stylish long sleeve henley perfect for cooler weather.",
     images: [Nang, Long],
     colors: ["Gray", "Navy", "Burgundy"],
@@ -104,7 +105,7 @@ export const DataProducts = [
   {
     id: 6,
     name: "Striped T-Shirt",
-    price: 32.99,
+    price: 11,
     originalPrice: null,
     description: "A classic striped t-shirt for a timeless look.",
     images: [Long, Nang],
@@ -123,10 +124,10 @@ export const DataProducts = [
   {
     id: 7,
     name: "V-Neck T-Shirt",
-    price: 27.99,
+    price: 12,
     originalPrice: null,
     description: "A comfortable v-neck t-shirt for a more refined casual look.",
-    images: [Khmer, Btb],
+    images: [Nang, Khmer, Btb],
     colors: ["Black", "White", "Gray", "Navy"],
     sizes: ["S", "M", "L", "XL", "XXL"],
     category: "T-Shirts",
@@ -161,7 +162,7 @@ export const DataProducts = [
   {
     id: 9,
     name: "Performance Athletic T-Shirt",
-    price: 34.99,
+    price: 12,
     originalPrice: null,
     description:
       "A moisture-wicking t-shirt perfect for workouts and active lifestyles.",
@@ -219,8 +220,8 @@ export const DataProducts = [
   {
     id: 12,
     name: "Printed Graphic Tee",
-    price: 36.99,
-    originalPrice: 46.99,
+    price: 12,
+    originalPrice: 13.99,
     description: "Make a statement with our bold printed graphic tee.",
     images: [Khmer, Btb, Nang],
     colors: ["Black", "White", "Gray", "Gold"],

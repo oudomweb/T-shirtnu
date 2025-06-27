@@ -190,8 +190,8 @@ a {
 /* Hero Section */
 .hero-section {
   position: relative;
-  height: 400px;
-  /* height: 100vh;/ */
+  height: 500px;
+  /* height: 100%; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -364,9 +364,10 @@ a {
     }
   }
 
-  /*  .hero-section {*/
-  /*    height: 400px;*/
-  /*  }*/
+  /* .hero-section {
+    height: 400px;
+    object-fit: cover;
+  } */
 
   /*  .hero-title {*/
   /*    font-size: 2rem;*/

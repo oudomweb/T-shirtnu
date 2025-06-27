@@ -12,6 +12,7 @@ import {
   Badge,
 } from "react-bootstrap";
 import {FaSearch, FaShoppingCart, FaUser, FaHeart} from "react-icons/fa";
+import logo from "../../assets/img/zaro.jpg";
 
 const NavbarTop = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -45,8 +46,8 @@ const NavbarTop = () => {
               <small>Free shipping on orders over $50</small>
             </div>
             <div>
-              <small className="me-3">+1 234 567 8900</small>
-              <small>info@tshirtshop.com</small>
+              <small className="me-3">+855 962 089 546</small>
+              <small>oudomngoun29@gmail.com</small>
             </div>
           </div>
         </Container>
@@ -60,7 +61,8 @@ const NavbarTop = () => {
       >
         <Container>
           <Navbar.Brand as={Link} to="/" className="fw-bold fs-3">
-            T-SHIRT SHOP
+            <img src={logo} alt="logo" style={{width: 50}} />
+            KHMER STYLE TEE
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
