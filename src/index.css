@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("../src/assets/style/style.css");
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -52,6 +53,9 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.product-card {
+  border: 1px solid rgb(235, 235, 235) !important;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -66,17 +70,7 @@ button:focus-visible {
   }
 }
 
-
-
-
-
-
-
-
 /*This is file Style.css */
-
-
-
 
 :root {
   --primary-color: #002a5c;
@@ -90,7 +84,7 @@ button:focus-visible {
 
 body {
   /*font-family: "Helvetica Neue", Arial, sans-serif;*/
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--dark-gray);
   overflow-x: hidden;
 }
@@ -196,10 +190,11 @@ a {
 /* Hero Section */
 .hero-section {
   position: relative;
-  height: 400px;
+  height: 500px;
+  /* height: 100%; */
   background-size: cover;
   background-position: center;
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   color: white;
   display: flex;
   align-items: center;
@@ -222,6 +217,7 @@ a {
   overflow: hidden;
   margin-bottom: 30px;
   border-radius: 5px;
+  border: 1px solid rgb(233, 231, 231);
 }
 
 .category-card img {
@@ -255,7 +251,6 @@ a {
   padding: 60px 0;
 }
 
-
 .cart-item {
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -266,7 +261,6 @@ a {
   max-width: 100px;
   height: auto;
 }
-
 
 .product-gallery img {
   cursor: pointer;
@@ -339,7 +333,6 @@ a {
   margin-right: 10px;
 }
 
-
 @media (max-width: 768px) {
   .hero-content {
     background-color: rgba(0, 0, 0, 0.5);
@@ -371,22 +364,62 @@ a {
     }
   }
 
+  /* .hero-section {
+    height: 400px;
+    object-fit: cover;
+  } */
 
+  /*  .hero-title {*/
+  /*    font-size: 2rem;*/
+  /*  }*/
 
-  /*  .hero-section {*/
-/*    height: 400px;*/
-/*  }*/
-
-/*  .hero-title {*/
-/*    font-size: 2rem;*/
-/*  }*/
-
-/*  .product-main-image {*/
-/*    height: 300px;*/
-/*  }*/
+  /*  .product-main-image {*/
+  /*    height: 300px;*/
+  /*  }*/
 }
 
-
+@media screen and (max-width: 700px) {
+  .hero-content {
+    width: 60%;
+  }
+  .hero-content h1 {
+    font-size: 20px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 502px) {
+  .hero-content h1 {
+    font-size: 16px;
+  }
+  .hero-content p {
+    font-size: 10px;
+  }
+  .learn-more {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 427px) {
+  .feature-homepage {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .title-shopping {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 16px;
+  }
+  .hero-content p {
+    font-size: 10px;
+  }
+  .learn-more {
+    font-size: 10px !important;
+  }
+}
 
 .instagram-item {
   position: relative;
@@ -404,4 +437,3 @@ a {
 .instagram-overlay a {
   color: #000; /* make sure icon is visible */
 }
-

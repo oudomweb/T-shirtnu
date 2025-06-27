@@ -41,8 +41,6 @@
 /*  color: #888;*/
 /*}*/
 
-
-
 /*:root {*/
 /*  --primary-color: #002a5c;*/
 /*  --secondary-color: #e63312;*/
@@ -305,11 +303,11 @@
 /*  margin-right: 10px;*/
 /*}*/
 
-/*!* Responsive Adjustments *!*/
-/*@media (max-width: 768px) {*/
-/*  .hero-section {*/
-/*    height: 400px;*/
-/*  }*/
+/* !* Responsive Adjustments *!*/
+/* @media (max-width: 768px) { */
+/* .hero-section { */
+/* height: 400px; */
+/* } */
 
 /*  .hero-title {*/
 /*    font-size: 2rem;*/
