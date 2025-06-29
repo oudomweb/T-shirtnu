@@ -15,7 +15,7 @@ import DiscountPage from "./pages/DiscountPage.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import CartPage from "./pages/CartPage.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
-import Profile from "./pages/Profile.jsx";
+import Profile from "./pages/profile/Profile.jsx";
 function App() {
   return (
     // <Router>

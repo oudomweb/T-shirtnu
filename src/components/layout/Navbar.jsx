@@ -52,8 +52,6 @@ const NavbarTop = () => {
           </div>
         </Container>
       </div>
-
-      {/* Main Navbar */}
       <Navbar
         expand="lg"
         className={`py-3 ${scrolled ? "bg-white shadow-sm" : "bg-white"}`}
@@ -62,7 +60,7 @@ const NavbarTop = () => {
         <Container>
           <Navbar.Brand as={Link} to="/" className="fw-bold fs-3">
             <img src={logo} alt="logo" style={{width: 50}} />
-            KHMER STYLE TEE
+            ZARO
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

@@ -1,6 +1,10 @@
 import React from "react";
 import "../assets/style/malorn.css";
 
+import {TbBrandFacebookFilled} from "react-icons/tb";
+import {PiInstagramLogoFill} from "react-icons/pi";
+import {PiTiktokLogoFill} from "react-icons/pi";
+import {BiLogoTelegram} from "react-icons/bi";
 const AboutUs = () => {
   return (
     <div className="about-us">
@@ -9,7 +13,7 @@ const AboutUs = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1 className="hero-title">About Our Story</h1>
+              <h1 className="hero-title">About Us</h1>
               <p className="hero-subtitle">
                 Discover the passion and dedication behind T-Shirt Shop - your
                 premier destination for premium quality apparel that combines
@@ -27,10 +31,10 @@ const AboutUs = () => {
             <div className="col-lg-6 mb-5 mb-lg-0">
               <h2 className="section-title">Our Journey</h2>
               <p className="lead-custom mb-4">
-                Founded in 2018, T-Shirt Shop began as a small dream to create
+                Founded in 2025, T-Shirt Shop began as a small dream to create
                 high-quality, comfortable t-shirts that people would love to
                 wear every day. What started in a small studio has grown into a
-                trusted brand serving customers worldwide.
+                trusted brand serving customers in our country.
               </p>
               <p className="lead-custom mb-4">
                 We believe that great clothing should be accessible to everyone.
@@ -142,7 +146,7 @@ const AboutUs = () => {
       </section>
 
       {/* Team Section */}
-      <section className="section-padding">
+      {/* <section className="section-padding">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
@@ -204,10 +208,10 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Statistics Section */}
-      <section className="stats-section section-padding">
+      {/* <section className="stats-section section-padding">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
@@ -228,7 +232,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission Statement */}
       <section className="section-padding bg-light-custom">
@@ -298,30 +302,30 @@ const AboutUs = () => {
                   <a
                     href="#"
                     className="btn btn-outline-dark btn-lg rounded-circle"
-                    style={{width: "50px", height: "50px"}}
+                    // style={{width: "50px", height: "50px"}}
                   >
-                    <i className="fab fa-facebook-f"></i>
+                    <BiLogoTelegram />
                   </a>
                   <a
                     href="#"
                     className="btn btn-outline-dark btn-lg rounded-circle"
-                    style={{width: "50px", height: "50px"}}
+                    // style={{width: "50px", height: "50px"}}
                   >
-                    <i className="fab fa-instagram"></i>
+                    <PiTiktokLogoFill />
                   </a>
                   <a
                     href="#"
                     className="btn btn-outline-dark btn-lg rounded-circle"
-                    style={{width: "50px", height: "50px"}}
+                    // style={{width: "50px", height: "50px"}}
                   >
-                    <i className="fab fa-twitter"></i>
+                    <PiInstagramLogoFill />
                   </a>
                   <a
                     href="#"
                     className="btn btn-outline-dark btn-lg rounded-circle"
-                    style={{width: "50px", height: "50px"}}
+                    // style={{textAlign: "center"}}
                   >
-                    <i className="fab fa-youtube"></i>
+                    <TbBrandFacebookFilled />
                   </a>
                 </div>
               </div>
