@@ -1,7 +1,7 @@
 "use client";
 
-import {useState, useEffect} from "react";
-import {Link, useLocation} from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import {
   Navbar,
   Nav,
@@ -10,9 +10,11 @@ import {
   Form,
   Button,
   Badge,
+  Dropdown,
 } from "react-bootstrap";
-import {FaSearch, FaShoppingCart, FaUser, FaHeart} from "react-icons/fa";
+import { FaSearch, FaShoppingCart, FaUser, FaHeart } from "react-icons/fa";
 import logo from "../../assets/img/zaro.jpg";
+import { useTranslation } from '../../store/translation';
 
 const NavbarTop = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -21,6 +23,7 @@ const NavbarTop = () => {
   // const [wishlistCount, setWishlistCount] = useState(2) // Mock wishlist count
   const [wishlistCount] = useState(2);
   const location = useLocation();
+  const { language, setLanguage, t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,11 +46,21 @@ const NavbarTop = () => {
         <Container>
           <div className="d-flex justify-content-between align-items-center">
             <div>
-              <small>Free shipping on orders over $50</small>
+              <small>{t('free_shipping')}</small>
             </div>
-            <div>
+            <div className="d-flex align-items-center">
               <small className="me-3">+855 962 089 546</small>
-              <small>oudomngoun29@gmail.com</small>
+              <small className="me-3">oudomngoun29@gmail.com</small>
+              {/* Language Switcher Dropdown */}
+              <Dropdown>
+                <Dropdown.Toggle variant="secondary" size="sm" id="dropdown-language">
+                  {language === 'en' ? 'EN' : 'ខ្មែរ'}
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item onClick={() => setLanguage('en')} active={language === 'en'}>EN</Dropdown.Item>
+                  <Dropdown.Item onClick={() => setLanguage('km')} active={language === 'km'}>ខ្មែរ</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
         </Container>
@@ -59,7 +72,7 @@ const NavbarTop = () => {
       >
         <Container>
           <Navbar.Brand as={Link} to="/" className="fw-bold fs-3">
-            <img src={logo} alt="logo" style={{width: 50}} />
+            <img src={logo} alt="logo" style={{ width: 50 }} />
             ZARO
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
