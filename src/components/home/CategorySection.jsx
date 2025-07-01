@@ -31,6 +31,7 @@ const CategorySection = () => {
             link: "/girls",
         },
     ]
+    
 
     return (
         <section className="py-5">

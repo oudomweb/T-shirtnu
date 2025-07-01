@@ -9,6 +9,7 @@ const FeaturedProducts = () => {
     const featured = DataProducts.filter((product) => product.isFeatured)
 
     return (
+        
         <section className="py-5">
             <Container>
                 <h2 className="text-center mb-5">Featured Products</h2>
