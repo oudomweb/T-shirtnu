@@ -7,6 +7,7 @@ const emptyFormState = {
   email: '',
   subject: '',
   message: '',
+  image: null, 
 };
 
 const savedForm = localStorage.getItem("formData");

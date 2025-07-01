@@ -12,14 +12,14 @@ const Profile = () => {
 
     // You can do something else here like syncing to localStorage or triggering side effects
   }, []);
-  const {name, phone, email, subject, message} = form;
+  const {name, phone, email, subject, message, image} = form;
 
   return (
     <div className="form-container-profile">
       <h2>Send Us a Message</h2>
 
       <div className="profile">
-        <img src={userImage} alt="User" />
+        <img src={image} alt="User" />
       </div>
 
       <form className="form-profile">

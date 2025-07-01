@@ -16,37 +16,52 @@ import {useDispatch, useSelector} from "react-redux";
 import {resetForm, setFormField} from "./profile/slice_action/formSlice";
 
 const ContactUs = () => {
-  //   const [formData, setFormData] = useState({
-  //     name: "",
-  //     phone: "",
-  //     email: "",
-  //     subject: "",
-  //     message: "",
-  //   });
   const formField = useSelector((state) => state.form);
   const dispatch = useDispatch();
   const [validated, setValidated] = useState(false);
 
   const handleChange = (e) => {
-    // const {name, value} = e.target;
-    // setFormData({
-    //   ...formData,
-    //   [name]: value,
-    // });
     dispatch(setFormField({field: e.target.name, value: e.target.value}));
   };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      dispatch(setFormField({field: "image", value: file}));
+    }
+  };
+
+  const toBase64 = (file) =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
+
   const sendMessageToTelegram = async (formData) => {
     const botToken = "7699588684:AAE-fSKagy-PkOcyG40mewURjuEISQLff9g";
     const chatId = 1200612758;
 
+    let imageText = "❌ No image attached";
+
+    if (formData.image) {
+      const base64Image = await toBase64(formData.image);
+      imageText = `🖼️ Image (base64 preview - truncated):\n${base64Image.slice(
+        0,
+        100
+      )}...`;
+    }
+
     const message = `
 📬 Client New Message:
-👤 Name: ${formField.name}
-📞 Phone: ${formField.phone}
-📧 Email: ${formField.email}
-📌 Subject: ${formField.subject}
-📝 Message: ${formField.message}
-        `;
+👤 Name: ${formData.name}
+📞 Phone: ${formData.phone}
+📧 Email: ${formData.email}
+📌 Subject: ${formData.subject}
+📝 Message: ${formData.message}
+${imageText}
+    `;
 
     try {
       await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -75,7 +90,7 @@ const ContactUs = () => {
       alert("✅ Thank you for your message! We will get back to you soon.");
     }
 
-    // setValidated(true);
+    setValidated(true);
   };
 
   return (
@@ -147,7 +162,6 @@ const ContactUs = () => {
                   <div>
                     <h5 className="mb-1">Working Hours</h5>
                     <p className="mb-0">Monday - Sunday: 24/7</p>
-                    {/*<p className="mb-0">Saturday: 10:00 AM - 4:00 PM</p>*/}
                   </div>
                 </div>
               </div>
@@ -181,7 +195,7 @@ const ContactUs = () => {
                       </Col>
 
                       <Col md={6} className="mb-3">
-                        <Form.Group controlId="Phone">
+                        <Form.Group controlId="phone">
                           <Form.Label>Phone Number : </Form.Label>
                           <Form.Control
                             type="text"
@@ -191,7 +205,7 @@ const ContactUs = () => {
                             required
                           />
                           <Form.Control.Feedback type="invalid">
-                            Please provide your name.
+                            Please provide your phone number.
                           </Form.Control.Feedback>
                         </Form.Group>
                       </Col>
@@ -227,8 +241,8 @@ const ContactUs = () => {
                       </Form.Control.Feedback>
                     </Form.Group>
 
-                    <Form.Group className="mb-4" controlId="message">
-                      <Form.Label> Message : </Form.Label>
+                    <Form.Group className="mb-3" controlId="message">
+                      <Form.Label>Message : </Form.Label>
                       <Form.Control
                         as="textarea"
                         rows={5}
@@ -240,6 +254,16 @@ const ContactUs = () => {
                       <Form.Control.Feedback type="invalid">
                         Please provide your message.
                       </Form.Control.Feedback>
+                    </Form.Group>
+
+                    <Form.Group className="mb-4" controlId="image">
+                      <Form.Label>Upload Image (optional):</Form.Label>
+                      <Form.Control
+                        type="file"
+                        name="image"
+                        accept="image/*"
+                        onChange={handleFileChange}
+                      />
                     </Form.Group>
 
                     <Button variant="primary" type="submit" size="lg">
