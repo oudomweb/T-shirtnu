@@ -5,8 +5,10 @@ import { Container, Row, Col, Form, Button, Breadcrumb } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import {DataProducts} from "../data/Data.jsx";
 import ProductCard from "../components/products/ProductCard.jsx";
+import { useTranslation } from "../store/translation.js";
 
 const ProductPage = () => {
+     const { language, setLanguage, t } = useTranslation();
     // const [products, setProducts] = useState(mockProducts)
     const [products] = useState(DataProducts);
     const [sortBy, setSortBy] = useState("newest")
@@ -18,7 +20,7 @@ const ProductPage = () => {
     const [selectedColors, setSelectedColors] = useState([])
     const [selectedSizes, setSelectedSizes] = useState([])
 
-    const categories = ["T-Shirts", "Polo Shirts", "Graphic Tees", "Long Sleeve"]
+    const categories = [t('t-shirt'),t('polo_shirt'), t('graphic_tees'),t('long_sleeve')]
     const colors = ["Black", "White", "Red", "Blue", "Green", "Yellow"]
     const sizes = ["XS", "S", "M", "L", "XL", "XXL"]
 
@@ -67,15 +69,15 @@ const ProductPage = () => {
             <Container>
                 <Breadcrumb className="mb-4">
                     <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }}>
-                        Home
+                        {t('home')}
                     </Breadcrumb.Item>
-                    <Breadcrumb.Item active>Products</Breadcrumb.Item>
+                    <Breadcrumb.Item active>{t('products')}</Breadcrumb.Item>
                 </Breadcrumb>
                 <Row>
                     {/* Filters Sidebar */}
                     <Col lg={3} className="mb-5 mb-lg-0">
                         <div className="mb-4">
-                            <h5 className="mb-3">Categories</h5>
+                            <h5 className="mb-3">{t('category')}</h5>
                             {categories.map((category, index) => (
                                 <Form.Check
                                     key={index}
@@ -90,13 +92,13 @@ const ProductPage = () => {
                         </div>
 
                         <div className="mb-4">
-                            <h5 className="mb-3">Price Range</h5>
-                            <Form.Label>Max Price: ${priceRange[1]}</Form.Label>
+                            <h5 className="mb-3">{t('price_range')}</h5>
+                            <Form.Label>{t('max_price')} : ${priceRange[1]}</Form.Label>
                             <Form.Range min={0} max={100} value={priceRange[1]} onChange={handlePriceChange} />
                         </div>
 
                         <div className="mb-4">
-                            <h5 className="mb-3">Colors</h5>
+                            <h5 className="mb-3">{t('color')}</h5>
                             <div className="d-flex flex-wrap gap-2">
                                 {colors.map((color, index) => (
                                     <div
@@ -117,7 +119,7 @@ const ProductPage = () => {
                         </div>
 
                         <div className="mb-4">
-                            <h5 className="mb-3">Sizes</h5>
+                            <h5 className="mb-3">{t('size')}</h5>
                             <div className="d-flex flex-wrap gap-2">
                                 {sizes.map((size, index) => (
                                     <div
@@ -139,14 +141,14 @@ const ProductPage = () => {
                         </div>
 
                         <Button variant="outline-secondary" onClick={clearFilters}>
-                            Clear All Filters
+                            {t('clear_all_filters')}
                         </Button>
                     </Col>
 
                     {/* Products Grid */}
                     <Col lg={9}>
                         <div className="d-flex justify-content-between align-items-center mb-4">
-                            <p className="mb-0">Showing {products.length} products</p>
+                            <p className="mb-0">{t('showing')} {products.length} {t('products')}</p>
                             <div className="d-flex align-items-center">
                                 <Form.Select value={sortBy} onChange={handleSortChange} className="me-3" style={{ width: "auto" }}>
                                     <option value="newest">Newest</option>

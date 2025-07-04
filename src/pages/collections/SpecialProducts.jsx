@@ -2,8 +2,11 @@ import { Container, Row, Col, Breadcrumb } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import {DataProducts} from "../../data/Data.jsx";
 import ProductCard from "../../components/products/ProductCard.jsx";
+import { useTranslation } from "../../store/translation.js";
 
 const SpecialProducts = () => {
+         const { language, setLanguage, t } = useTranslation();
+
     // Filter for special products (using isNew as a proxy for special)
     const specialProducts = DataProducts.filter((product) => product.isNew)
 
@@ -13,15 +16,15 @@ const SpecialProducts = () => {
                 {/* Breadcrumb */}
                 <Breadcrumb className="mb-4">
                     <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }}>
-                        Home
+                        {t('home')}
                     </Breadcrumb.Item>
                     <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/products" }}>
-                        Products
+                        {t('products')}
                     </Breadcrumb.Item>
-                    <Breadcrumb.Item active>Special Products</Breadcrumb.Item>
+                    <Breadcrumb.Item active>{t('special_products')}</Breadcrumb.Item>
                 </Breadcrumb>
 
-                <h1 className="mb-5">Special Products</h1>
+                <h1 className="mb-5">{t('special_products')}</h1>
 
                 <Row>
                     {specialProducts.map((product) => (

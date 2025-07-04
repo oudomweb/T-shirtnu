@@ -2,9 +2,12 @@ import { Container, Row, Col, Breadcrumb } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import {DataProducts} from "../../data/Data.jsx";
 import ProductCard from "../../components/products/ProductCard.jsx";
+import { useTranslation } from "../../store/translation.js";
 // import { mockProducts } from "../../data/mockData"
 
 const BoysProducts = () => {
+         const { language, setLanguage, t } = useTranslation();
+
     const boysProducts = DataProducts.slice(4, 8)
 
     return (
@@ -13,12 +16,12 @@ const BoysProducts = () => {
                 {/* Breadcrumb */}
                 <Breadcrumb className="mb-4">
                     <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }}>
-                        Home
+                        {t('home')}
                     </Breadcrumb.Item>
-                    <Breadcrumb.Item active>Boys</Breadcrumb.Item>
+                    <Breadcrumb.Item active>{t('boys')}</Breadcrumb.Item>
                 </Breadcrumb>
 
-                <h1 className="mb-5">Boys' T-Shirts</h1>
+                <h1 className="mb-5">{t('boys_t-shirt')}</h1>
 
                 <Row>
                     {boysProducts.map((product) => (

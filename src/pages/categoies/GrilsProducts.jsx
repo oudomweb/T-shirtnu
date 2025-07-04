@@ -2,8 +2,11 @@ import { Container, Row, Col, Breadcrumb } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import ProductCard from "../../components/products/ProductCard.jsx";
 import {DataProducts} from "../../data/Data.jsx";
+import { useTranslation } from "../../store/translation.js";
 
 const GirlsProducts = () => {
+         const { language, setLanguage, t } = useTranslation();
+
     // In a real app, you would filter products by gender/category
     // For this demo, we'll just use a subset of the mock products
     const girlsProducts = DataProducts.slice(6, 10)
@@ -14,12 +17,12 @@ const GirlsProducts = () => {
                 {/* Breadcrumb */}
                 <Breadcrumb className="mb-4">
                     <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }}>
-                        Home
+                        {t('home')}
                     </Breadcrumb.Item>
-                    <Breadcrumb.Item active>Girls</Breadcrumb.Item>
+                    <Breadcrumb.Item active>{t('girls')}</Breadcrumb.Item>
                 </Breadcrumb>
 
-                <h1 className="mb-5">Girls' T-Shirts</h1>
+                <h1 className="mb-5">{t('girls_t-shirt')}</h1>
 
                 <Row>
                     {girlsProducts.map((product) => (

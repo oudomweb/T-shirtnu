@@ -1,0 +1,98 @@
+key,en,km
+hello,Hello,សួស្តី
+welcome,Welcome,សូមស្វាគមន៍
+cart,Cart,កន្ត្រក
+free_shipping,Free shipping on orders over $50,ដឹកជញ្ជូនឥតគិតថ្លៃលើការបញ្ជាទិញលើស $50 
+home,Home,ទំព័រដើម
+shop,Shop,ហាង
+all_products,All Products,ផលិតផលទាំងអស់
+men,Men,បរុស
+women,Women,ស្រ្ថី
+boys,Boys,ប្រុស
+girls,Girls,នារី
+collections,Conllections,ប្រភេទអាវ
+popular_products,Popular Products,ផលិតផលល្បីៗ
+special_products, Special Products,ផលិតផលពិសេស
+best_sellers, Best Sellters,ផលិតផលលក់ដាច់
+sale,Sale,បញ្ចុះតម្លៃ
+about_us,About Us,អំពើយើង
+
+contact,Contact,ទំនាក់ទំនង
+search,Search,ស្វែងរក
+shop_by_category, Shop by Category,ទិញតាមប្រភេទ
+shop_now, Show Now,ទិញឥឡូវនេះ
+featured_products,Featured Products,ផលិតផលពិសេស 
+new_arrivals,New Arrivals,ទំនិញថ្មី
+featured,Featured,ពិសេស
+add_to_cart,Add to Cart,ដាក់ចូលកន្ត្រក
+favorite,Favorite,ចំណូលចិត្ត
+view,View,ទស្សនៈ
+summer_sale,Summer Sale,ការលក់រដូវក្តៅ
+up to 50% off on selected items,Up to 50% off on selected items,បញ្ចុះតម្លៃរហូតដល់ ៥០% សម្រាប់ទំនិញមួយចំនួន
+new_collections,New Collections,ប្រភេទថ្មី
+check out our latest arrivals,Check out our latest arrivals,សូមមើលទំនិញមកដល់ថ្មីបំផុតរបស់យើង
+up to 50% off on selected items,Up to 50% off on selected items,បញ្ចុះតម្លៃរហូតដល់ ៥០% សម្រាប់ទំនិញមួយចំនួន
+discover,Discover,រកឃើញ
+follow_us, Follow Us,តាមដានយើងតាម
+under_follow_stay_update,Stay updated with our latest trends and products,ដើម្បីទទួលបានព័ត៌មានថ្មីៗអំពីនិន្នាការ និងផលិតផលចុងក្រោយបំផុតរបស់យើង
+products,Products,ផលិតផល
+category,Category,ប្រភេទ
+t-shirt,T-shirt,អាវយឺត
+polo_shirt,Polo Shirt,អាវប៉ូឡូ
+graphic_tees,Graphic Tees,អាវយឺតបោះពុម្ពរូបភាព
+long_sleeve,Long Sleeve,ដៃវែង
+price_range,Price Range,តម្លៃចន្លោះពី
+max_price,Max Proce,តម្លៃអតិបរមា
+color,Colors,ពណ៌ 
+size,Size,ទំហំ
+clear_all_filters,Clear all Filters,លុបទាំងអស់
+mens_shirt,Men's Shirt,អាវយឺតសម្រាប់បុរស
+womens_shirt,Women's Shirt,អាវសម្រាប់ស្រ្ដី
+boys_t-shirt,Boy's Shirt,អាវសម្រាប់ក្មេងប្រុស
+girls_t-shirt,Girls's T-shirt,អាវសម្រាប់ក្មេងស្រី
+sale up to 50% off,SALE UP TO 50% OFF,បញ្ចុះតម្លៃដល់ទៅ ៥០%
+dis-text,Limited time offer on selected items. Shop now before they're gone!,កម្មវិធីបញ្ចុះតម្លៃមានកំណត់ សម្រាប់ផលិតផលដែលបានជ្រើសរើសជាពិសេស។ កុំអោយឱកាសល្អនេះរំលងទៅទេ ទិញឥឡូវនេះ មុនពេលអស់ពីស្តុក!
+
+
+get_in_touch,Get In Touch,ទាក់ទងមក
+get-in_touch_text,We'd love to hear from you! Whether you have a question about our products need help with an order or want to collaborate with us our team is here to assist you.,យើងចង់ឮពីអ្នក! មិនថាអ្នកមានសំណួរអំពីផលិតផលរបស់យើង ត្រូវការជំនួយក្នុងការបញ្ជាទិញ ឬចង់សហការជាមួយយើងទេ ក្រុមការងាររបស់យើងនៅទីនេះដើម្បីជួយអ្នក។
+location,Location,ទីតាំង
+location_details,Location Details,វិថីកែវចិន្តា ភ្នំពេញ 12000
+phone number,Phone Number,លេខទូរស័ព្ទ
+email_address,Email Address,អាសយដ្ឋានអ៊ីមែល
+working_hours,Working Hours,ម៉ោងធ្វើការ
+monday_sunday,Monday - Sunday,ច័ន្ទ-អាទិត្យ
+send_us a message,Send Us a Message,ផ្ញើសារមកយើង
+name,Name,ឈ្មោះ
+t-shirts name,T-shirt's Name,ឈ្មោះរបស់អាវ
+message,Message,សារ
+send_message,Send Message,ផ្ញើសារ 
+map_location,Find Us On The Map,ស្វែងរកពួកយើងនៅក្នុងផែនទី
+
+footer_text_detail,We offer premium quality t-shirts for men women and kids Our products are made with the finest materials for comfort and durability,យើងផ្តល់ជូននូវអាវយឺតដែលមានគុណភាពខ្ពស់សម្រាប់បុរស ស្ត្រី និងកុមារ។ ផលិតផលរបស់ពួកយើងត្រូវបានផលិតឡើងជាមួយនឹងវត្ថុធាតុដើមល្អបំផុតសម្រាប់យុវជនសម័យថ្មី។
+customer_service,Customer Service,សេវាអតិថិជន
+contact_us,Contact Us,ទំនាក់ទំនងមកកាន់ពួកយើង
+shipping_returns, Shipping & Returns,ការដឹកជញ្ជូន និងការត្រឡប់មកវិញ
+size_guide,Size Guide,ការណែនាំអំពីទំហំ
+track_order,Track Order,តាមដានការបញ្ជាទិញ
+our_story,Our Story,ប្រវត្តិរបស់យើង
+careers,Careers,អាជីព
+sustainability,Sustainability,និរន្តរភាព
+privacy_policy,Privacy Policy,គោលការណ៍ឯកជនភាព
+Terms_Conditions,Terms & Conditions,លក្ខខណ្ឌ
+faqs,FAQs,សំណួរគេសួរញឹកញាប់
+shop_by_category,Shop By Category,ទិញទំនិញតាមប្រភេទ
+summer_t-shirt,Summer Collection 2025,អាវសម្រាប់រដូវក្ដៅ 2025
+text_for_summer_t-shirt,Discover our latest collection of premium t-shirts for the summer season,ស្វែងយល់ពីអាវយឺតដ៏ប្រណិតចុងក្រោយបំផុតរបស់យើងសម្រាប់រដូវក្តៅ
+
+specail_discount,Special Discount,បញ្ចុះតម្លៃពិសេស
+limited,Limited Time Offer,ការផ្តល់ជូនពេលវេលាមានកំណត់
+specail_discount_text,Get up to 50% off on selected items. Don't miss out on these amazing deals!,ទទួលបានការបញ្ចុះតម្លៃរហូតដល់ 50% លើទំនិញដែលបានជ្រើសរើស។ កុំខកខានការផ្តល់ជូនដ៏អស្ចារ្យទាំងនេះ!
+view_offers,View Offers,មើលការផ្តល់ជូន
+premium_quality,Premium Quality,គុណភាពពិសេស
+comfort_guaranteed,Comfort Guaranteed,ធានាផាសុកភាព
+text_detail_premium,Our t-shirts are made with the finest materials for ultimate comfort and durability.,អាវយឺតរបស់យើងត្រូវបានផលិតឡើងជាមួយនឹងវត្ថុធាតុដើមល្អបំផុតសម្រាប់ផលិតផល និងប្រើប្រាស់បានយូរបំផុត។
+learn_more,Learn More,ស្វែងយល់បន្ថែម
+
+showing,Showing ,បង្ហាញ 
+my_account,My Account,ករណីរបស់ខ្ញុំ

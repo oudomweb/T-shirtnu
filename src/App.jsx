@@ -14,32 +14,36 @@ import SpecialProducts from "./pages/collections/SpecialProducts.jsx";
 import DiscountPage from "./pages/DiscountPage.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import CartPage from "./pages/CartPage.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
+import Profile from "./pages/profile/Profile.jsx";
 function App() {
   return (
     // <Router>
-        <div className="app">
-          <NavbarTop/>
-            <main>
-                <Routes>
-                  <Route path="/"            element={<HomePage/>} />
-                  <Route path="/products"    element={<ProductPage/>} />
-                  <Route path="/product/:id" element={<ProductDetail/>} />
-                  <Route path="/men"         element={<MenProducts/>} />
-                  <Route path="/women"       element={<WomenProducts/>} />
-                  <Route path="/boys"        element={<BoysProducts/>} />
-                  <Route path="/girls"       element={<GirlsProducts/>} />
-                  <Route path="/best"        element={<BestSellers/>} />
-                  <Route path="/popular"     element={<PopularProducts/>} />
-                  <Route path="/special"     element={<SpecialProducts/>}/>
-                  <Route path="/discounts"   element={<DiscountPage/>}  />
-                  <Route path="/contact"  element={<ContactUs/>}   />
-                  <Route path="/cart"        element={<CartPage/>}/>
-                </Routes>
-            </main>
-          <Footer/>
-        </div>
+    <div className="app">
+      <NavbarTop />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/products" element={<ProductPage />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/men" element={<MenProducts />} />
+          <Route path="/women" element={<WomenProducts />} />
+          <Route path="/boys" element={<BoysProducts />} />
+          <Route path="/girls" element={<GirlsProducts />} />
+          <Route path="/best" element={<BestSellers />} />
+          <Route path="/popular" element={<PopularProducts />} />
+          <Route path="/special" element={<SpecialProducts />} />
+          <Route path="/discounts" element={<DiscountPage />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/account" element={<Profile />} />
+          <Route path="/cart" element={<CartPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
     // {/*</Router>*/}
-  )
+  );
 }
 
 export default App;

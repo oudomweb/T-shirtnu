@@ -2,8 +2,11 @@ import { Container, Row, Col, Breadcrumb } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import {DataProducts} from "../../data/Data.jsx";
 import ProductCard from "../../components/products/ProductCard.jsx";
+import { useTranslation } from "../../store/translation.js";
 
 const BestSellers = () => {
+         const { language, setLanguage, t } = useTranslation();
+
     const bestSellerProducts = DataProducts.filter((product) => product.isBestSeller)
 
     return (
@@ -11,15 +14,15 @@ const BestSellers = () => {
             <Container>
                 <Breadcrumb className="mb-4">
                     <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }}>
-                        Home
+                        {t('home')}
                     </Breadcrumb.Item>
                     <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/products" }}>
-                        Products
+                        {t('products')}
                     </Breadcrumb.Item>
-                    <Breadcrumb.Item active>Best Sellers</Breadcrumb.Item>
+                    <Breadcrumb.Item active>{t('best_sellers')}</Breadcrumb.Item>
                 </Breadcrumb>
 
-                <h1 className="mb-5">Best Sellers</h1>
+                <h1 className="mb-5">{t('best_sellers')}</h1>
 
                 <Row>
                     {bestSellerProducts.map((product) => (
