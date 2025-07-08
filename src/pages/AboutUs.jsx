@@ -8,7 +8,7 @@ import {BiLogoTelegram} from "react-icons/bi";
 const AboutUs = () => {
   return (
     <div className="about-us">
-      {/* Hero Section */}
+
       <section className="hero-section text-center">
         <div className="container">
           <div className="row">
@@ -24,7 +24,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* About Content Section */}
       <section className="section-padding">
         <div className="container">
           <div className="row align-items-center">
